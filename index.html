@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <ul>
+    <li>Lorem ipsum.</li>
+    <li>Iusto, adipisci.</li>
+    <li>Adipisci, temporibus!</li>
+    <li>Architecto, culpa!</li>
+    <li>Fugit, in!</li>
+  </ul>
+
+
+
+  <script>
+
+  var und = undefined;
+  var nul = null;
+  var number  = 5;
+  var bool  = false || true;
+  var bool1 = true && false;
+  var str  = 'asdasd';
+  var str1 = "asdasdasd";
+  var bool3 = '';
+  var float_num  = 4.532;
+  // var f = .9;
+  {
+    let x = 'adas';
+  }
+
+  const con = {
+    'a': 'aasdasd',
+    'b': 'adsasd'
+  };
+
+
+
+  const f = 12;
+  con['a'] = 'new str';
+  console.log(con['a']);
+  console.log(f);
+
+
+    function init(a){
+      for(var i = 0 ; i  < a; i += 1){
+        if(i == 4 || i == 6){
+          continue;
+        }
+        console.log(i);
+      };
+
+      console.log(i);
+    };
+
+    init(23);
+
+    // alert('asdasd');
+    // var response  = prompt('plz enter number ...' , 'here');
+    // var response_conf  = confirm('plz enter number ...');
+    // alert(response);
+    // alert(response_conf);
+
+    console.log(5 == 5); // true
+    console.log(5 != 3); //true
+    console.log(5 == "5"); // true
+    console.log(5 === "5"); // true
+    // console.log('a' in 'asdasd'); // true
+
+    var a = 2;
+    if(a > 3){
+      alert(a);
+    } else if(a == 5){
+      ///
+    } else if(a = 10){
+      //
+    }
+    else{
+      document.write('blablabla');
+    }
+
+
+  var day = 1;
+
+  switch(day){
+    case 1: {
+      console.log('adin!');
+      break;
+    };
+    case 1: {
+      console.log('adin!!!!!');
+    }
+  };
+
+  var x = '3';
+
+  switch(x){
+    case "1":
+    case "2":
+    case "3":
+    case "4":
+    case "5": {
+      console.log('adasdasd');
+      break;
+    }
+    default : {
+
+    }
+  }
+  a = 15;
+
+  while(a > 5){
+    console.log(a);
+    a--;
+  }
+
+  do{
+    console.log('true');
+  } while(a > 2135);
+
+  function func_name(arr){
+    for(var i = 0 ; i < arguments.length; i++){
+      console.log(arguments[i]);
+    }
+    console.log('arr' , arr);
+  }
+func_name(1,2,3,4,5,6,7,8,9,10);
+func_name('adsasd' , 'two string');
+
+//
+// var f = function(param){
+//   console.log(param);
+// };
+
+var Human = {
+  name: "",
+  surname : '',
+
+  setName : function(a , b){
+    human  = {};
+    human['name'] = a;
+    human['surname'] = b;
+    return human;
+  }
+}
+
+
+var human1  = Human.setName('Anton' , 'Mazun');
+console.log(human1);
+
+
+var App  = {};
+
+App.menuComponent  = function(){
+
+  var init = function(){
+    var menu_items = document.querySelectorAll('li');
+    change_color(menu_items);
+    console.log('inited!');
+  };
+
+  var change_color = function(list_items){
+    for(var i = 0; i < list_items.length; i++){
+      list_items[i].style.color = 'red';
+    }
+  }
+
+  return {
+    init : init
+  }
+}();
+
+App.menuComponent.init();
+  </script>
+</body>
+</html>
